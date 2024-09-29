@@ -26,8 +26,9 @@ function Navbar() {
             <hr className='w-2/4 border-none h-[1.5px] bg-gray-700 hidden'/>
           </NavLink>
         </ul>
+
         <div className='flex items-center gap-1'>
-          <img src={svg.instagram} className='w-6 h-6 cursor-pointer' alt="Instagram Logo" />
+          <img src={svg.instagram} className='w-4 h-4 cursor-pointer' alt="Instagram Logo" />
         </div>
 
         <div className='flex items-center gap-5'>
