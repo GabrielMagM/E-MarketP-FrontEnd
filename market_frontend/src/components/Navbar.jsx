@@ -27,9 +27,9 @@ function Navbar() {
           </NavLink>
         </ul>
 
-        <div className='flex items-center gap-1'>
+       {/* <div className='flex items-center gap-1'>
           <img src={svg.instagram} className='w-4 h-4 cursor-pointer' alt="Instagram Logo" />
-        </div>
+        </div>*/}
 
         <div className='flex items-center gap-5'>
           <img src={assets.search_icon} className='w-4 cursor-pointer ' alt="" />
@@ -47,10 +47,24 @@ function Navbar() {
               <img src={assets.cart_icon} className='w-5 min-w-5' alt="" />
               <p className='absolute right-[-5px] bottom-[-5px] w-4 text-center leading-4 bg-black text-white aspect-square rounded-full text-[8px]'></p>
           </Link>
-          <img onClickC={()=>setVisible(true)} src={assets.menu_icon} className='w-5 cursor-pointer sm:hidden' alt="" />
+
+      {/*Sidebar is Visible when */}
+          <img onClick={()=>setVisible(true)} src={assets.menu_icon} className='w-5 cursor-pointer sm:hidden' alt="" />
         </div>
 
       {/*Sidebar Menu for small screens*/}
+      <div className={`absolute top-0 right-0 bottom-0 overflow-hidden bg-white transition-all ${visible ? 'w-full' : 'w-0'} `}> 
+          <div className='flex flex-col text-gray-600 '>
+              <div onClick={()=> setVisible(false)} className='flex items-center gap-4 p-3 '>
+                  <img className='h-4 rotate-180 cursor-pointer' src={assets.dropdown_icon} alt="" />
+                  <p className='cursor-pointer'>Back</p>
+              </div>
+              <NavLink onClick={()=> setVisible(false)} className='py-2 pl-12 border' to='/collection'>COLLECTION</NavLink>
+              <NavLink onClick={()=> setVisible(false)} className='py-2 pl-12 border' to='/'>HOME</NavLink>
+              <NavLink onClick={()=> setVisible(false)} className='py-2 pl-12 border' to='/about'>ABOUT</NavLink>
+              <NavLink onClick={()=> setVisible(false)} className='py-2 pl-12 border' to='/contact'>CONTACT</NavLink>
+          </div>
+      </div>
 
     </div>
   )
