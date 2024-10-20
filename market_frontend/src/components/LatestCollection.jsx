@@ -17,12 +17,12 @@ const LatestCollection = () => {
         <div className='text-center py-8 text-3xl'>
             <Title text1={'LATEST'} text2={'COLLECTIONS'}/>
             <p className='w-3/4 m-auto text-xs sm:text-sm md:text-base text-gray-600'>
-            At our store, we believe that clothing is more than just fabric – it’s a way to express your personality and style.
+            At our store, we believe that clothing is more than just fabric its a way to express your personality and style.
             </p>
         </div>
       
       {/*----------Redering Product Section--------------------------------*/}
-        <div className='grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 gap-4 gap-y-3'>
+        <div className='gap-54 grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 gap-4 gap-y-3 border-2 border-gray-500 p-2'>
         {
             LatestProducts.map((item,index)=>(
               <ProductItem key={index} id={item._id} image={item.image} name={item.name} price={item.price}/>
