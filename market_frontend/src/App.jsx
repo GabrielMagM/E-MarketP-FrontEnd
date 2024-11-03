@@ -10,6 +10,7 @@ import PlaceOrder from './pages/PlaceOrder'
 import Orders from './pages/Orders'
 import About from './pages/About'
 import Navbar from './components/Navbar'
+import Footer from './components/Footer'
 const App = () => {
   return (
     <div className='px-3 sm:px-[5vw] md:px-[7vw] lg:px-[9vw]'>
@@ -26,7 +27,7 @@ const App = () => {
         <Route path='/orders' element={<Orders/>} />
         
       </Routes>
-      
+      <Footer/>
     </div>
   )
 }
