@@ -5,9 +5,9 @@ import {svg} from '../svg/svg'
 function Navbar() {
   const [visible,setVisible] = useState(false);
   return (
-    <div className='flex items-center justify-between py-6 font-medium'>
+    <div className='flex items-center justify-between py-6 font-medium px-2'>
         <NavLink to='/'>
-          <img src={assets.logo} className='w-24 cursor-pointer' alt="" />
+          <img src={assets.WhoShopLogo} className='w-32 h-8 cursor-pointer' alt="" />
         </NavLink>
         <ul className='hidden sm:flex gap-5 text-sm text-gray-700'>
           <NavLink to='/' className='flex flex-col items-center gap-1'>
@@ -54,7 +54,7 @@ function Navbar() {
         </div>
 
       {/*Sidebar Menu for small screens*/}
-      <div className={`absolute top-0 right-0 bottom-0 overflow-hidden bg-white transition-all ${visible ? 'w-full' : 'w-0'} `}> 
+      <div className={`absolute top-0 right-0 bottom-0 overflow-hidden bg-white transition-all ${visible ? 'w-1/2' : 'w-0'} `}> 
           <div className='flex flex-col text-gray-600 '>
               <div onClick={()=> setVisible(false)} className='flex items-center gap-4 p-3 '>
                   <img className='h-4 rotate-180 cursor-pointer' src={assets.dropdown_icon} alt="" />

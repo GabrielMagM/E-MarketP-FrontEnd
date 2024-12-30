@@ -54,7 +54,7 @@ import p_img50 from './p_img50.png'
 import p_img51 from './p_img51.png'
 import p_img52 from './p_img52.png'
 
-
+import WhoShopLogo from './WhoShopLogo.png'
 import logo from './logo.png'
 import hero_img from './hero_img.png'
 import cart_icon from './cart_icon.png'
@@ -76,6 +76,7 @@ import cross_icon from './cross_icon.png'
 import hero_design from './hero_design.jpg'
 
 export const assets = {
+    WhoShopLogo,
     logo,
     hero_img,
     cart_icon,
