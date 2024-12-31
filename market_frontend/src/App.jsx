@@ -13,7 +13,7 @@ import Navbar from './components/Navbar'
 import Footer from './components/Footer'
 const App = () => {
   return (
-    <div className='px-3 sm:px-[5vw] md:px-[7vw] lg:px-[9vw]'>
+    <div className='px-1 sm:px-[5vw] md:px-[3vw] lg:px-[9vw]'>
       <Navbar />
       <Routes>
         <Route path='/' element={<Home/>} />
