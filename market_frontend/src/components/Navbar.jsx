@@ -1,28 +1,31 @@
-import React, { useState } from 'react'
+import React, { useContext, useState } from 'react'
 import {assets} from '../assets/assets'
 import {Link, NavLink } from 'react-router-dom'
 import {svg} from '../svg/svg'
+import { ShopContext } from '../context/ShopContext';
 function Navbar() {
   const [visible,setVisible] = useState(false);
+  const {setShowSearch} = useContext(ShopContext);
+
   return (
     <div className='flex items-center justify-between py-6 font-medium px-2'>
         <NavLink to='/'>
           <img src={assets.WhoShopLogo} className='w-32 h-8 cursor-pointer' alt="" />
         </NavLink>
         <ul className='hidden sm:flex gap-5 text-sm text-gray-700'>
-          <NavLink to='/' className='flex flex-col items-center gap-1'>
+          <NavLink to='/' className='flex flex-col items-center gap-1 hover:scale-110 transition ease-in-out hover:font-bold hover:text-gray-800'>
             <p>HOME</p>
             <hr className='w-2/4 border-none h-[1.5px] bg-gray-700 hidden'/>
           </NavLink>
-          <NavLink to='/collection' className='flex flex-col items-center gap-1'>
+          <NavLink to='/collection' className='flex flex-col items-center gap-1 hover:scale-110 transition ease-in-out hover:font-bold hover:text-gray-8'>
             <p>COLLECTION</p>
             <hr className='w-2/4 border-none h-[1.5px] bg-gray-700 hidden'/>
           </NavLink>
-          <NavLink to='about' className='flex flex-col items-center gap-1'>
+          <NavLink to='about' className='flex flex-col items-center gap-1 hover:scale-110 transition ease-in-out hover:font-bold hover:text-gray-8'>
             <p>ABOUT</p>
             <hr className='w-2/4 border-none h-[1.5px] bg-gray-700 hidden'/>
           </NavLink>
-          <NavLink to='contact' className='flex flex-col items-center gap-1'>
+          <NavLink to='contact' className='flex flex-col items-center gap-1 hover:scale-110 transition ease-in-out hover:font-bold hover:text-gray-8'>
             <p>CONTACT</p>
             <hr className='w-2/4 border-none h-[1.5px] bg-gray-700 hidden'/>
           </NavLink>
@@ -33,7 +36,7 @@ function Navbar() {
         </div>*/}
 
         <div className='flex items-center gap-4'>
-          <img src={svg.search} className='w-6 cursor-pointer ' alt="" />
+          <img onClick={()=>setShowSearch(true)} src={svg.search} className='w-6 cursor-pointer ' alt="" />
           <div className='group relative'> 
             <img className='w-6 cursor-pointer' src={svg.person}  alt="" />
             <div className='group-hover:block hidden absolute dropdown-menu right-0 pt-4'>
