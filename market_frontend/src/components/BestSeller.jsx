@@ -11,7 +11,8 @@ const BestSeller = () => {
   useEffect(() => {
     const bestProduct = products.filter((item) => item.bestseller)
     setBestSeller(bestProduct.slice(0, 5))
-  }, []) // Se añade 'products' como dependencia para evitar advertencias
+  }, []) 
+  // Se añade 'products' como dependencia para evitar advertencias
 
   return (
     <div className='my-10'>
