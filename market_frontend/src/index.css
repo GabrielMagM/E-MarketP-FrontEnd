@@ -11,7 +11,7 @@ a.active hr{
     
     background-color: #e0e0e0;
     font-family: Outfit;
-    outline: 0.5px solid red;
+    /*outline: 0.5px solid red;*/
 }
 
 .prata-regular {
@@ -20,7 +20,7 @@ a.active hr{
     font-style: normal;
   }
 
-  ::-webkit-scrollbar{
+  :-webkit-scrollbar{
     display: none;
   }
 
@@ -29,5 +29,14 @@ a.active hr{
         background-color: black;
         color: #e0e0e0;
     }
+  }
+  
+
+  .cart-icon {
+    transition: transform 0.5s ease-in-out; /* Transición para el movimiento */
+  }
+  
+  .cart-icon.animate {
+    transform: scale(1.2) translateY(-5px); /* Agranda la imagen y la mueve un poco hacia arriba */
   }
   

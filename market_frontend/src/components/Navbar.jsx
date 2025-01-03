@@ -1,11 +1,19 @@
-import React, { useContext, useState } from 'react'
+import React, { useContext, useState, useEffect } from 'react'
 import {assets} from '../assets/assets'
 import {Link, NavLink } from 'react-router-dom'
 import {svg} from '../svg/svg'
 import { ShopContext } from '../context/ShopContext';
 function Navbar() {
   const [visible,setVisible] = useState(false);
-  const {setShowSearch} = useContext(ShopContext);
+  const {setShowSearch, getCartCount} = useContext(ShopContext);
+  const [isAnimating, setIsAnimating] = useState(false);
+
+  useEffect(() => {
+    if (getCartCount() > 0) {
+      setIsAnimating(true);
+      setTimeout(() => setIsAnimating(false), 500); // La animación dura 0.5 segundos
+    }
+  }, [getCartCount()])
 
   return (
     <div className='flex items-center justify-between py-6 font-medium px-2'>
@@ -48,8 +56,8 @@ function Navbar() {
             </div>
           </div>
           <Link to='/cart' className='relative'>
-              <img src={svg.local_cart} className='w-6 min-w-5' alt="" />
-              <p className='absolute right-[-5px] bottom-[-5px] w-4 text-center leading-4 bg-black text-white aspect-square rounded-full text-[8px]'></p>
+              <img src={svg.local_cart} className={`w-6 min-w-5 cart-icon ${isAnimating ? 'animate' : ''}`} alt="" />
+              <p className='absolute right-[-5px] bottom-[-5px] w-4 text-center leading-4 bg-black text-white aspect-square rounded-full text-[8px]'>{getCartCount()}</p>
           </Link>
 
       {/*Sidebar is Visible when */}
