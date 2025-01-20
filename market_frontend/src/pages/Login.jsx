@@ -1,5 +1,5 @@
 import React, { useContext } from 'react'
-import { useState } from 'react'
+import { useState, useEffect } from 'react'
 import { ShopContext } from '../context/ShopContext';
 import axios from 'axios';
 import { toast } from 'react-toastify';
@@ -42,6 +42,12 @@ const Login = () => {
       toast.error(error.message)
     }
   }
+
+  useEffect(()=>{
+    if (token) {
+      navigate('/')
+    }
+  },[token])
 
   return (
     <form onSubmit={onSubmitHandler} className='flex flex-col items-center w-[90%] sm:max-w-96 m-auto mt-14 gap-4 text-gray-600 border'>
