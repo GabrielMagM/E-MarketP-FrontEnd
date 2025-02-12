@@ -5,6 +5,7 @@ import { assets } from '../assets/assets'
 import { useState } from 'react'
 import { ShopContext } from '../context/ShopContext'
 import axios from 'axios'
+import { toast } from 'react-toastify'
 
 const PlaceOrder = () => {
 
@@ -48,7 +49,7 @@ const PlaceOrder = () => {
       }
       console.log(orderItems);
       let orderData = {
-        addres: formData,
+        address: formData,
         items: orderItems,
         amount: getCartAmount() + delivery_fee
       }
@@ -69,7 +70,9 @@ const PlaceOrder = () => {
       }
 
     } catch (error) {
-
+      console.log(error);
+      toast.error(error.message)
+      
     }
   }
 

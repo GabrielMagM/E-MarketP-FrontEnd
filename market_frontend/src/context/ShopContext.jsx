@@ -10,7 +10,7 @@ const ShopContextProvider = (props) => {
     const backendUrl = import.meta.env.VITE_BACKEND_URL
     const [search,setSearch] = useState('');
     const [showSearch,setShowSearch] = useState(false);
-    const [cartItems, setCartsItems] = useState({});
+    const [cartItems, setCartItems] = useState({});
     const [products, setProducts] = useState([]);
     const [token, setToken] = useState('')
     const navigate = useNavigate();
@@ -32,7 +32,7 @@ const ShopContextProvider = (props) => {
             cartData[itemId] = {};
             cartData[itemId][size] = 1;
         }
-        setCartsItems(cartData);
+        setCartItems(cartData);
         if (token) {
             try {
                 await axios.post(backendUrl + '/api/cart/add', {itemId, size}, {headers:{token}})
@@ -69,7 +69,7 @@ const ShopContextProvider = (props) => {
     const updateQuantity = async (itemId,size,quantity) =>{
         let cartData = structuredClone(cartItems);
         cartData[itemId][size] = quantity;
-        setCartsItems(cartData);
+        setCartItems(cartData);
 
         if (token) {
             try {
@@ -118,7 +118,7 @@ const ShopContextProvider = (props) => {
         try {
             const response = await axios.post(backendUrl + '/api/cart/get', {}, {headers:{token}})
             if (response.data.success) {
-                setCartsItems(response.data.cartData)
+                setCartItems(response.data.cartData)
             }
         } catch(error){
             console.log(error);
@@ -140,7 +140,7 @@ const ShopContextProvider = (props) => {
     const value = {
         products, currency, delivery_fee,
         search, setSearch, showSearch, setShowSearch,
-        cartItems, addToCart, getCartCount, updateQuantity,
+        cartItems, setCartItems, addToCart, getCartCount, updateQuantity,
         getCartAmount, navigate, backendUrl, token,
         setToken
     }
