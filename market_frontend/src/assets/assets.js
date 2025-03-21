@@ -74,6 +74,7 @@ import razorpay_logo from './razorpay_logo.png'
 import stripe_logo from './stripe_logo.png'
 import cross_icon from './cross_icon.png'
 import hero_design from './hero_design.jpg'
+import kansona from './kansona.png'
 
 export const assets = {
     WhoShopLogo,
@@ -95,7 +96,8 @@ export const assets = {
     razorpay_logo,
     stripe_logo,
     cross_icon,
-    hero_design
+    hero_design,
+    kansona
 }
 
 

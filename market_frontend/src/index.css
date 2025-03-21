@@ -1,15 +1,62 @@
+@import "slick-carousel/slick/slick.css";
+@import "slick-carousel/slick/slick-theme.css";
+
 @import url('https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&family=Prata&display=swap');
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+/* Asegúrate de que los botones sean visibles */
+.slick-prev, .slick-next {
+  display: block;
+  color: white; /* Color del texto (si usas texto) */
+  font-size: 16px; /* Tamaño de fuente */ /* Botón circular */
+  transform: translateY(-50%);
+  z-index: 10; /* Asegura que los botones estén por encima de las imágenes */
+}
+
+/* Posiciona el botón anterior a la izquierda */
+.slick-prev {
+  left: 2rem;
+}
+
+/* Posiciona el botón siguiente a la derecha */
+.slick-next {
+  right: 2rem;
+}
+
+/* Agrega un hover effect si quieres que los botones cambien cuando el usuario pase el ratón */
+.slick-prev:hover, .slick-next:hover {
+  background-color: rgba(0, 0, 0, 0.8);
+}
+
+/* Puntos de navegación (dots) */
+.slick-dots {
+  position: absolute;
+  bottom: 20px; /* Coloca los puntos 20px desde el fondo de la imagen */
+  left: 50%;
+  transform: translateX(-50%); /* Centra los puntos horizontalmente */
+  z-index: 20; /* Asegura que los puntos estén por encima de las imágenes */
+  padding: 0;
+  background: transparent; /* Hace que el fondo de los puntos sea transparente */
+}
+
+.slick-dots li {
+  margin: 0 5px; /* Espaciado entre los puntos */
+  background: transparent; /* Hace que el fondo de los puntos sea transparente */
+}
+
+
+
+
 
 a.active hr{
     display: block;
 }
 
 *{
-    
-    background-color: #e0e0e0;
+    outline: 1px solid red;
+    background-color:rgb(255, 255, 255);
     font-family: Outfit;
     
 }
