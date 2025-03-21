@@ -3,7 +3,7 @@ import { assets } from '../assets/assets'
 
 const Footer = () => {
   return (
-    <div className='flex flex-col sm:grid grid-cols-[3fr_1fr_1fr] gap-14 text-sm bg-zinc-900 px-8 text-gray-300'>
+    <div className='flex flex-col sm:grid grid-cols-[3fr_1fr_1fr] gap-14 text-sm pt-8 bg-zinc-900 px-8 text-gray-300'>
     {/* Contenido superior */}
         <div>
             <img src={assets.WhoShopLogo} className='mb-5 w-32 pl-2' alt="" />
