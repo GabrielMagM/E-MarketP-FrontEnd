@@ -24,11 +24,11 @@ function Navbar() {
   }, [getCartCount()])
 
   return (
-    <div className='flex items-center justify-between py-6 font-medium px-2'>
+    <div className='flex items-center justify-around py-6 font-medium'>
         <NavLink to='/'>
           <img src={assets.WhoShopLogo} className='w-32 h-8 cursor-pointer' alt="" />
         </NavLink>
-        <ul className='hidden sm:flex gap-5 text-sm text-gray-700'>
+        <ul className='hidden sm:flex gap-10 text-sm text-gray-700'>
           <NavLink to='/' className='flex flex-col items-center gap-1 hover:scale-110 transition ease-in-out hover:font-bold hover:text-gray-800'>
             <p>HOME</p>
             <hr className='w-2/4 border-none h-[1.5px] bg-gray-700 hidden'/>
@@ -57,7 +57,7 @@ function Navbar() {
             <img onClick={()=> token ? null : navigate('/login')} className='w-6 cursor-pointer' src={svg.person}  alt="" />
             {/* -----------------DropDOWN Menu----------*/}
             {token && 
-            <div className='group-hover:block hidden absolute dropdown-menu right-0 pt-4'>
+            <div className='group-hover:block hidden absolute dropdown-menu right-0 pt-4 z-10'>
               <div className='flex flex-col gap-2 w-36 py-3 px-5 bg-slate-100 text-gray-500 rounded'>
                 <p className='cursor-pointer hover:text-blue-700'>My Profile</p>
                 <p onClick={()=>navigate('/orders')} className='cursor-pointer hover:text-green-500'>Orders</p>
@@ -76,7 +76,7 @@ function Navbar() {
         </div>
 
       {/*Sidebar Menu for small screens*/}
-      <div className={`absolute top-0 right-0 bottom-0 overflow-hidden bg-white transition-all ${visible ? 'w-1/2' : 'w-0'} `}> 
+      <div className={`z-10 absolute top-0 right-0 bottom-0 overflow-hidden bg-white transition-all ${visible ? 'w-1/2' : 'w-0'} `}> 
           <div className='flex flex-col text-gray-600 '>
               <div onClick={()=> setVisible(false)} className='flex items-center gap-4 p-3 '>
                   <img className='h-4 rotate-180 cursor-pointer' src={assets.dropdown_icon} alt="" />

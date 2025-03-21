@@ -35,11 +35,11 @@ const Hero = () => {
         <div className='w-full'>
           <Slider {...settings}>
             <div>
-              <img src={assets.kansona} className='h-auto object-cover' alt="Hero " />
+              <img src={assets.kansona} className='h-auto' alt="Hero " />
             </div>
             {/* Puedes agregar más imágenes aquí cuando sea necesario */}
             <div>
-              <img src={assets.kansona} className='h-auto object-cover' alt="Hero " />
+              <img src={assets.kansona} className='h-auto' alt="Hero " />
             </div>
           </Slider>
         </div>

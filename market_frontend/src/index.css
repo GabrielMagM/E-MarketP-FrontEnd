@@ -6,30 +6,6 @@
 @tailwind components;
 @tailwind utilities;
 
-/* Asegúrate de que los botones sean visibles */
-.slick-prev, .slick-next {
-  display: block;
-  color: white; /* Color del texto (si usas texto) */
-  font-size: 16px; /* Tamaño de fuente */ /* Botón circular */
-  transform: translateY(-50%);
-  z-index: 10; /* Asegura que los botones estén por encima de las imágenes */
-}
-
-/* Posiciona el botón anterior a la izquierda */
-.slick-prev {
-  left: 2rem;
-}
-
-/* Posiciona el botón siguiente a la derecha */
-.slick-next {
-  right: 2rem;
-}
-
-/* Agrega un hover effect si quieres que los botones cambien cuando el usuario pase el ratón */
-.slick-prev:hover, .slick-next:hover {
-  background-color: rgba(0, 0, 0, 0.8);
-}
-
 /* Puntos de navegación (dots) */
 .slick-dots {
   position: absolute;
@@ -41,24 +17,47 @@
   background: transparent; /* Hace que el fondo de los puntos sea transparente */
 }
 
-.slick-dots li {
-  margin: 0 5px; /* Espaciado entre los puntos */
-  background: transparent; /* Hace que el fondo de los puntos sea transparente */
+.slick-dots li button:before {
+  font-size: 12px; /* Tamaño de los puntos */
+  color: rgba(255, 255, 255, 0.7); /* Puntos transparentes con algo de opacidad */
+  background: transparent; /* Fondo transparente en los puntos */
 }
 
+.slick-dots li.slick-active button:before {
+  color: rgba(255, 255, 255, 1); /* Cambiar el color del punto activo */
+}
 
+/* Personalizar los botones prev y next */
+.slick-prev, .slick-next {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background-color: rgba(0, 0, 0, 0.5); /* Fondo transparente oscuro */
+  color: white; /* Color de la flecha */
+  border-radius: 50%;
+  padding: 10px;
+  z-index: 10; /* Asegura que los botones estén por encima de las imágenes */
+}
 
+.slick-prev {
+  left: 10px; /* Ajusta la posición del botón "prev" */
+}
 
+.slick-next {
+  right: 10px; /* Ajusta la posición del botón "next" */
+}
+
+.slick-prev:hover, .slick-next:hover {
+  background-color: rgba(0, 0, 0, 0.7); /* Cambiar color de fondo al pasar el mouse */
+}
 
 a.active hr{
     display: block;
 }
 
 *{
-    outline: 1px solid red;
-    background-color:rgb(255, 255, 255);
+   
     font-family: Outfit;
-    
 }
 
 .prata-regular {
@@ -71,7 +70,6 @@ a.active hr{
 
   @media(max-width:640px){
     a.active{
-        background-color: black;
         color: #e0e0e0;
     }
   }
