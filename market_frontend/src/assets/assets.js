@@ -75,6 +75,7 @@ import stripe_logo from './stripe_logo.png'
 import cross_icon from './cross_icon.png'
 import hero_design from './hero_design.jpg'
 import kansona from './kansona.png'
+import killsona from './KillSona.png'
 
 export const assets = {
     WhoShopLogo,
@@ -97,7 +98,8 @@ export const assets = {
     stripe_logo,
     cross_icon,
     hero_design,
-    kansona
+    kansona,
+    killsona
 }
 
 
