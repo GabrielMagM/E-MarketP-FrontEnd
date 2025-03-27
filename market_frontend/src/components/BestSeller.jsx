@@ -22,7 +22,7 @@ const BestSeller = () => {
           Lorem Ipsum is simply dummy text of the printing and typesetting industry.
         </p>
       </div>
-      <div className='grid grid-cols-4 sm:grid-cols-3 md:grid-cols-5 lg-grid-cols-5 gap-4 gap-y-6'>
+      <div className='grid grid-cols-4 sm:grid-cols-3 md:grid-cols-5 lg-grid-cols-5 gap-10 gap-y-6 md:px-10'>
         {
           bestSeller.map((item, index )=>(
             <ProductItem key={index} id={item._id} name={item.name} image={item.image} price={item.price}/>

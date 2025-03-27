@@ -76,9 +76,9 @@ const Collection = () => {
   
 
   return (
-    <div className='flex flex-col sm:flex-row gap-1 sm:gap-10 pt-10 pb-4 border-t px-4'>
+    <div className='flex flex-col sm:flex-row gap-1 sm:gap-10 pt-10 pb-4 border-t px-10'>
         {/*filter Options */}
-          <div className='min-w-60'>
+          <div className='min-w-60 border border-gray-400'>
               <p className=' border-b-[1px] border-gray-400 my-2 text-xl flex items-center cursor-pointer gap-2'> FILTERS
                 <img onClick={()=>setShowFilter(!showFilter)} src={assets.dropdown_icon} className={`h-3 sm:hidden ${showFilter ? 'rotate-90' : ''}`} alt="" />
               </p>
@@ -130,7 +130,7 @@ const Collection = () => {
               </div>
 
               {/*--------Map Products--------*/}
-              <div className='grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4 gap-y-6'>
+              <div className='grid grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-4 gap-y-6'>
                   {
                     filterProducts.map((item,index)=>(
                       <ProductItem key={index} id={item._id} image={item.image} name={item.name} price={item.price} />

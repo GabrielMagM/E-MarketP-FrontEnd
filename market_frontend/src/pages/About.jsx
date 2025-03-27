@@ -7,13 +7,13 @@ const About = () => {
 
 
   return (
-    <div>
+    <div className=''>
 
       <div className='text-2xl text-center pt-8 border-t'>
           <Title text1={'ABOUT'} text2={'US'}/>
       </div>
 
-      <div className=' my-10 flex flex-col md:flex-row gap-16 '>
+      <div className='px-10 my-10 flex flex-col md:flex-row gap-16 '>
           <img src={assets.about_img} alt=""  className='w-full md:max-w-[450px]'/>
           <div className='flex flex-col justify-center gap-6 md:2-2/4 text-gray-600'>
               <p>Descubre una amplia variedad de productos diseñados para satisfacer todas tus necesidades. Desde moda y tecnología hasta decoración y belleza, tenemos algo especial para todos.</p>
@@ -23,10 +23,10 @@ const About = () => {
           </div>
       </div>
 
-      <div className='text-2xl py-4'>
+      <div className='text-2xl py-4 px-10'>
           <Title text1={'WHY '} text2={'CHOOSE US'}/> 
       </div>
-      <div className='flex flex-col md:flex-row text-sm mb-20'>
+      <div className='flex flex-col md:flex-row text-sm mb-20 px-10'>
 
         <div className='border px-10 md:px-16 py-8 sm:py-10 flex flex-col gap-5'> 
             <b>Quality Assurance:</b>

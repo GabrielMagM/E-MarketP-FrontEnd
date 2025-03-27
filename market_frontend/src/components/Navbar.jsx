@@ -28,7 +28,7 @@ function Navbar() {
         <NavLink to='/'>
           <img src={assets.WhoShopLogo} className='w-32 h-8 cursor-pointer' alt="" />
         </NavLink>
-        <ul className='hidden sm:flex gap-10 text-sm text-gray-700'>
+        <ul className='hidden sm:flex gap-10 text-md text-gray-700'>
           <NavLink to='/' className='flex flex-col items-center gap-1 hover:scale-110 transition ease-in-out hover:font-bold hover:text-gray-800'>
             <p>HOME</p>
             <hr className='w-2/4 border-none h-[1.5px] bg-gray-700 hidden'/>
