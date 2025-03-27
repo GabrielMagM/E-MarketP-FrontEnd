@@ -24,24 +24,24 @@ function Navbar() {
   }, [getCartCount()])
 
   return (
-    <div className='flex items-center justify-around py-6 font-medium'>
+    <div className='flex items-center justify-around py-6 font-medium bg-zinc-900'>
         <NavLink to='/'>
-          <img src={assets.WhoShopLogo} className='w-32 h-8 cursor-pointer' alt="" />
+          <img src={assets.logo} className='w-32 h-8 cursor-pointer' alt="" />
         </NavLink>
-        <ul className='hidden sm:flex gap-10 text-md text-gray-700'>
-          <NavLink to='/' className='flex flex-col items-center gap-1 hover:scale-110 transition ease-in-out hover:font-bold hover:text-gray-800'>
+        <ul className='hidden sm:flex gap-10 text-md text-gray-200'>
+          <NavLink to='/' className='flex flex-col items-center gap-1 hover:scale-110 transition ease-in-out hover:font-bold hover:text-white'>
             <p>HOME</p>
             <hr className='w-2/4 border-none h-[1.5px] bg-gray-700 hidden'/>
           </NavLink>
-          <NavLink to='/collection' className='flex flex-col items-center gap-1 hover:scale-110 transition ease-in-out hover:font-bold hover:text-gray-8'>
+          <NavLink to='/collection' className='flex flex-col items-center gap-1 hover:scale-110 transition ease-in-out hover:font-bold hover:text-white'>
             <p>COLLECTION</p>
             <hr className='w-2/4 border-none h-[1.5px] bg-gray-700 hidden'/>
           </NavLink>
-          <NavLink to='about' className='flex flex-col items-center gap-1 hover:scale-110 transition ease-in-out hover:font-bold hover:text-gray-8'>
+          <NavLink to='about' className='flex flex-col items-center gap-1 hover:scale-110 transition ease-in-out hover:font-bold hover:text-white'>
             <p>ABOUT</p>
             <hr className='w-2/4 border-none h-[1.5px] bg-gray-700 hidden'/>
           </NavLink>
-          <NavLink to='contact' className='flex flex-col items-center gap-1 hover:scale-110 transition ease-in-out hover:font-bold hover:text-gray-8'>
+          <NavLink to='contact' className='flex flex-col items-center gap-1 hover:scale-110 transition ease-in-out hover:font-bold hover:text-white'>
             <p>CONTACT</p>
             <hr className='w-2/4 border-none h-[1.5px] bg-gray-700 hidden'/>
           </NavLink>
@@ -72,7 +72,7 @@ function Navbar() {
           </Link>
 
       {/*Sidebar is Visible when */}
-          <img onClick={()=>setVisible(true)} src={assets.menu_icon} className='w-5 cursor-pointer sm:hidden' alt="" />
+          <img onClick={()=>setVisible(true)} src={svg.menu} className='w-7 cursor-pointer sm:hidden' alt="" />
         </div>
 
       {/*Sidebar Menu for small screens*/}

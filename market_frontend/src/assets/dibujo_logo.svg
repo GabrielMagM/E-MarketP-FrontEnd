@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   width="140mm"
+   height="30mm"
+   viewBox="0 0 140 30"
+   version="1.1"
+   id="svg1"
+   inkscape:version="1.4 (86a8ad7, 2024-10-11)"
+   sodipodi:docname="dibujo_logo.svg"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg">
+  <sodipodi:namedview
+     id="namedview1"
+     pagecolor="#ffffff"
+     bordercolor="#000000"
+     borderopacity="0.02745098"
+     inkscape:showpageshadow="2"
+     inkscape:pageopacity="0.0"
+     inkscape:pagecheckerboard="0"
+     inkscape:deskcolor="#d1d1d1"
+     inkscape:document-units="mm"
+     inkscape:zoom="1.3934011"
+     inkscape:cx="225.70672"
+     inkscape:cy="44.854277"
+     inkscape:window-width="1366"
+     inkscape:window-height="705"
+     inkscape:window-x="-8"
+     inkscape:window-y="-8"
+     inkscape:window-maximized="1"
+     inkscape:current-layer="layer1" />
+  <defs
+     id="defs1">
+    <rect
+       x="195.20581"
+       y="30.142074"
+       width="48.801453"
+       height="44.495443"
+       id="rect20" />
+    <rect
+       x="217.45353"
+       y="32.295079"
+       width="66.743164"
+       height="50.954459"
+       id="rect19" />
+    <rect
+       x="151.42804"
+       y="33.730416"
+       width="77.50819"
+       height="66.743164"
+       id="rect17" />
+    <linearGradient
+       id="swatch15"
+       inkscape:swatch="solid">
+      <stop
+         style="stop-color:#dd4704;stop-opacity:1;"
+         offset="0"
+         id="stop16" />
+    </linearGradient>
+    <inkscape:path-effect
+       effect="fillet_chamfer"
+       id="path-effect1"
+       is_visible="true"
+       lpeversion="1"
+       nodesatellites_param="F,0,0,1,0,2.0665493,0,1 @ F,0,0,1,0,1.7034009,0,1 @ F,0,0,1,0,1.7124833,0,1 @ F,0,0,1,0,2.7062929,0,1 @ F,0,0,1,0,2.0732665,0,1 @ F,0,0,1,0,2.2146887,0,1"
+       radius="0"
+       unit="px"
+       method="auto"
+       mode="F"
+       chamfer_steps="1"
+       flexible="false"
+       use_knot_distance="true"
+       apply_no_radius="true"
+       apply_with_radius="true"
+       only_selected="false"
+       hide_knots="false" />
+  </defs>
+  <g
+     inkscape:label="Capa 1"
+     inkscape:groupmode="layer"
+     id="layer1">
+    <g
+       id="g22"
+       transform="matrix(1.1168589,0,0,1.1007474,4.7061156,-1.5300503)">
+      <path
+         style="opacity:1;fill:#000000;fill-opacity:0;fill-rule:evenodd;stroke:#dd3204;stroke-width:0.979617;stroke-linejoin:bevel;stroke-dasharray:none;stroke-opacity:1;paint-order:normal"
+         d="m 20.7922,25.280646 c -0.469961,-0.195828 -2.136185,-0.972076 -3.70272,-1.724996 -1.566536,-0.752919 -3.292417,-1.58001 -3.835291,-1.837978 -1.74035,-0.826995 -1.766261,-0.924662 -1.766261,-6.6578 v -4.92797 l 0.522179,-1.0307375 c 0.288533,-0.5695411 0.793134,-1.2100386 1.127742,-1.4314605 0.333059,-0.2203976 2.341073,-1.1465123 4.462252,-2.0580326 5.042093,-2.1667052 4.830781,-2.1702098 10.027891,0.1663189 4.484735,2.0162581 4.745061,2.1699675 5.276488,3.1155164 0.403654,0.7182038 0.420005,0.9405748 0.420005,5.7119733 0,5.316186 -0.06706,5.769082 -0.978456,6.608134 -0.637618,0.587007 -8.963365,4.225269 -9.917966,4.334047 -0.510594,0.05818 -1.077512,-0.03435 -1.635863,-0.267015 z"
+         id="path7" />
+      <text
+         xml:space="preserve"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:26.6862px;font-family:'Bookman Old Style';-inkscape-font-specification:'Bookman Old Style, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;text-align:start;writing-mode:lr-tb;direction:ltr;text-anchor:start;opacity:1;fill:#c72d00;fill-opacity:1;fill-rule:evenodd;stroke:none;stroke-width:5.16281;stroke-linejoin:bevel;stroke-dasharray:none;stroke-opacity:1;paint-order:normal"
+         x="12.330103"
+         y="26.137463"
+         id="text20"
+         transform="scale(1.0839693,0.92253536)"><tspan
+           sodipodi:role="line"
+           id="tspan20"
+           style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:26.6862px;font-family:'Bookman Old Style';-inkscape-font-specification:'Bookman Old Style, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;fill:#c72d00;fill-opacity:1;stroke-width:5.16281"
+           x="12.330103"
+           y="26.137463">T</tspan></text>
+    </g>
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:22.4553px;font-family:Rockwell;-inkscape-font-specification:'Rockwell, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;text-align:start;writing-mode:lr-tb;direction:ltr;text-anchor:start;opacity:1;fill:#c72d00;fill-opacity:1;fill-rule:evenodd;stroke:none;stroke-width:4.34425;stroke-linejoin:bevel;stroke-dasharray:none;stroke-opacity:1;paint-order:normal"
+       x="48.527496"
+       y="21.220976"
+       id="text21"
+       transform="scale(0.9406613,1.0630819)"><tspan
+         sodipodi:role="line"
+         id="tspan21"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:22.4553px;font-family:Rockwell;-inkscape-font-specification:'Rockwell, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;fill:#c72d00;fill-opacity:1;stroke-width:4.34425"
+         x="48.527496"
+         y="21.220976"><tspan
+           style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:22.4553px;font-family:'Berlin Sans FB';-inkscape-font-specification:'Berlin Sans FB, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;stroke-width:4.34425"
+           id="tspan22">T</tspan><tspan
+           style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:22.4553px;font-family:Cambria;-inkscape-font-specification:'Cambria, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;stroke-width:4.34425"
+           id="tspan23">R</tspan><tspan
+           style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:22.4553px;font-family:Consolas;-inkscape-font-specification:'Consolas, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;stroke-width:4.34425"
+           id="tspan24">UENO</tspan></tspan></text>
+  </g>
+</svg>
